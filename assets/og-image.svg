@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#7b61ff"/>
+      <stop offset="1" stop-color="#00d1ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b1020" />
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="url(#g)" opacity="0.12" />
+  <text x="100" y="200" font-family="Inter, sans-serif" font-size="48" fill="#fff">YOUR NAME — Portfolio</text>
+</svg>

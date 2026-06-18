@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+  <title>YOUR NAME — Software Engineer Portfolio</title>
+  <meta name="description" content="YOUR NAME — Software engineer. Portfolio showcasing projects, skills, experience, and contact information." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="YOUR NAME — Software Engineer Portfolio" />
+  <meta property="og:description" content="Portfolio of YOUR NAME — projects, skills, experience, and contact information." />
+  <meta property="og:image" content="assets/og-image.svg" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark">
+  <!-- Scroll progress indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="Go to top">
+        <img src="assets/favicon.svg" alt="" class="brand-icon" aria-hidden="true" />
+        <span class="brand-text">YOUR NAME</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#timeline" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle dark and light mode" title="Toggle theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button id="menu-toggle" class="btn-icon mobile-only" aria-controls="nav-list" aria-expanded="false" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow" aria-hidden="true">Hello, I'm</p>
+          <h1 class="hero-title">YOUR NAME</h1>
+          <p class="hero-subtitle">Software Engineer • Frontend & Full-stack Developer</p>
+          <p class="hero-bio">I design and build performant, accessible web applications with clean code, delightful UX, and strong attention to detail. I enjoy collaborating with cross-functional teams and turning ideas into polished products.</p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <ul class="stats" aria-hidden="true">
+            <li>
+              <span class="stat-value" data-target="12">0</span>
+              <span class="stat-label">Projects</span>
+            </li>
+            <li>
+              <span class="stat-value" data-target="4">0</span>
+              <span class="stat-label">Years Experience</span>
+            </li>
+            <li>
+              <span class="stat-value" data-target="20">0</span>
+              <span class="stat-label">Techs</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="card glass avatar-card">
+            <img src="assets/avatar.svg" alt="Avatar placeholder" class="avatar" />
+            <div class="visual-decor">
+              <svg class="bg-pattern" viewBox="0 0 400 200" preserveAspectRatio="none" focusable="false" aria-hidden="true">
+                <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7b61ff"/><stop offset="1" stop-color="#00d1ff"/></linearGradient></defs>
+                <rect width="100%" height="100%" fill="url(#g)" opacity="0.12"></rect>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>About</h2>
+          <p class="section-intro">A brief summary about me and the kind of work I pursue.</p>
+        </div>
+
+        <div class="content-grid about-grid">
+          <div class="card glass about-card reveal">
+            <h3>Personal Summary</h3>
+            <p>I'm a pragmatic software engineer who cares deeply about performance, accessibility, and developer experience. I build production-ready applications, with an emphasis on maintainable code and intuitive interfaces.</p>
+            <ul class="list">
+              <li>Collaborative problem-solver</li>
+              <li>Product-minded engineer</li>
+              <li>Strong testing & debugging skills</li>
+            </ul>
+          </div>
+
+          <div class="card glass about-card reveal" data-delay="120">
+            <h3>Key Strengths</h3>
+            <ul class="list">
+              <li>Frontend architecture & responsive design</li>
+              <li>APIs, databases & backend fundamentals</li>
+              <li>Performance optimization & accessibility</li>
+            </ul>
+            <h3>Professional Goals</h3>
+            <p>Contribute to high-impact products, mentor junior developers, and design systems that scale across teams and platforms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Skills</h2>
+          <p class="section-intro">Languages, frameworks, and tools I use regularly.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card glass reveal" data-delay="60">
+            <h4>Frontend</h4>
+            <p>HTML, CSS, JavaScript, React (optional), responsive design, accessibility</p>
+            <div class="skill-bars">
+              <div class="skill-row"><span>HTML</span><progress max="100" value="95"></progress></div>
+              <div class="skill-row"><span>CSS</span><progress max="100" value="90"></progress></div>
+              <div class="skill-row"><span>JavaScript</span><progress max="100" value="85"></progress></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass reveal">
+            <h4>Backend</h4>
+            <p>Node.js, Express, RESTful APIs, SQL/NoSQL, auth patterns</p>
+            <div class="skill-bars">
+              <div class="skill-row"><span>Node.js</span><progress max="100" value="80"></progress></div>
+              <div class="skill-row"><span>Databases</span><progress max="100" value="75"></progress></div>
+            </div>
+          </div>
+
+          <div class="skill-card glass reveal" data-delay="120">
+            <h4>Tools & Tech</h4>
+            <p>Git, Docker, CI, testing frameworks, design systems, editor tooling</p>
+            <div class="skill-tags">
+              <span class="tag">Git</span><span class="tag">Docker</span><span class="tag">CI/CD</span><span class="tag">Testing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p class="section-intro">Selected projects highlighting technical decisions and results.</p>
+        </div>
+
+        <div class="filters-row">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack">Full-stack</button>
+          <button class="filter-btn" data-filter="tooling">Tooling</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass reveal" data-category="frontend">
+            <div class="project-media">
+              <img src="assets/project-1.svg" alt="Project 1 placeholder" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Project One</h3>
+              <p class="project-desc">A responsive UI project demonstrating advanced CSS and accessible patterns. Placeholder description to be customized.</p>
+              <p class="project-tech">Tech: HTML · CSS · JavaScript</p>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass reveal" data-category="fullstack" data-delay="80">
+            <div class="project-media">
+              <img src="assets/project-2.svg" alt="Project 2 placeholder" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Project Two</h3>
+              <p class="project-desc">A full-stack app with API integration and data persistence. Placeholder description for customization.</p>
+              <p class="project-tech">Tech: Node.js · Express · PostgreSQL</p>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass reveal" data-category="tooling" data-delay="140">
+            <div class="project-media">
+              <img src="assets/project-3.svg" alt="Project 3 placeholder" />
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Project Three</h3>
+              <p class="project-desc">Developer tooling and automation project. Placeholder content to be replaced with real notes and links.</p>
+              <p class="project-tech">Tech: Shell · Node.js · CI</p>
+              <div class="project-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline (Experience & Education) -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Experience & Education</h2>
+          <p class="section-intro">A concise timeline of roles and learning milestones.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Software Engineer — Company A</h4>
+              <time>2022 — Present</time>
+              <p>Worked on product features, performance optimizations, and cross-team initiatives. Placeholder details.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-delay="80">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Frontend Developer — Project B</h4>
+              <time>2020 — 2022</time>
+              <p>Built responsive components and design systems. Placeholder details for customization.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal" data-delay="160">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>B.S. in Computer Science — University X</h4>
+              <time>2016 — 2020</time>
+              <p>Focused on algorithms, systems, and web development. Replace with real education details.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p class="section-intro">Get in touch for collaborations, internships, or freelance work.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card glass contact-card reveal">
+            <h3>Reach out</h3>
+            <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+            <p>GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com/your-username</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">linkedin.com/in/your-profile</a></p>
+          </div>
+
+          <form class="card glass contact-form reveal" id="contact-form" aria-label="Contact form">
+            <h3>Contact form</h3>
+            <p class="muted">This is a UI-only form. Configure submission or replace action to send messages.</p>
+            <label>
+              <span class="label-text">Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span class="label-text">Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span class="label-text">Message</span>
+              <textarea name="message" rows="5" placeholder="Short message" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send message</button>
+              <button type="reset" class="btn ghost">Clear</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>© <span id="footer-year"></span> YOUR NAME. Built with care.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
